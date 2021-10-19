@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-10-19 Tue 15:31 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="lahral" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link href="stylesheet.css" rel="stylesheet">
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgca4cbe0">1. Shows</a></li>
+<li><a href="#org59c35d8">2. Movies</a></li>
+<li><a href="#orgbedb994">3. Books</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgca4cbe0" class="outline-2">
+<h2 id="orgca4cbe0"><span class="section-number-2">1</span> Shows</h2>
+<div class="outline-text-2" id="text-1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Anime</th>
+<th scope="col" class="org-left">status</th>
+<th scope="col" class="org-left">episode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Yamato 2202</td>
+<td class="org-left">started</td>
+<td class="org-left">5</td>
+</tr>
+
+<tr>
+<td class="org-left">Dennou Coil</td>
+<td class="org-left">started</td>
+<td class="org-left">4</td>
+</tr>
+
+<tr>
+<td class="org-left">Cowboy Bebop</td>
+<td class="org-left">started</td>
+<td class="org-left">3</td>
+</tr>
+
+<tr>
+<td class="org-left">Neon Genesis Evangelion</td>
+<td class="org-left">started</td>
+<td class="org-left">6</td>
+</tr>
+
+<tr>
+<td class="org-left">Violet Evergarden</td>
+<td class="org-left">started</td>
+<td class="org-left">3</td>
+</tr>
+
+<tr>
+<td class="org-left">.hack//SIGN</td>
+<td class="org-left">started</td>
+<td class="org-left">2</td>
+</tr>
+
+<tr>
+<td class="org-left">King's Avatar</td>
+<td class="org-left">started</td>
+<td class="org-left">8</td>
+</tr>
+
+<tr>
+<td class="org-left">Ghost in the Shell SAC</td>
+<td class="org-left">started</td>
+<td class="org-left">13</td>
+</tr>
+
+<tr>
+<td class="org-left">Full Metal Panic</td>
+<td class="org-left">started</td>
+<td class="org-left">9</td>
+</tr>
+
+<tr>
+<td class="org-left">Kill la Kill</td>
+<td class="org-left">started</td>
+<td class="org-left">3</td>
+</tr>
+
+<tr>
+<td class="org-left">My Hero Academia</td>
+<td class="org-left">started</td>
+<td class="org-left">see list</td>
+</tr>
+
+<tr>
+<td class="org-left">Touhou Memories of Phantasm</td>
+<td class="org-left">started</td>
+<td class="org-left">6</td>
+</tr>
+
+<tr>
+<td class="org-left">Thunderbolt Fantasy</td>
+<td class="org-left">restart</td>
+<td class="org-left"><del>8</del> 1</td>
+</tr>
+
+<tr>
+<td class="org-left">Blue Drop</td>
+<td class="org-left">restart</td>
+<td class="org-left"><del>10</del> 1</td>
+</tr>
+
+<tr>
+<td class="org-left">Little Witch Academia</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Samurai Champloo</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Flip Flappers</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Steins;Gate</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Magical Girl Lyrical Nanoha</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">FMA</td>
+<td class="org-left">new</td>
+<td class="org-left">see list</td>
+</tr>
+
+<tr>
+<td class="org-left">JoJo's Bizarre Adventure</td>
+<td class="org-left">new</td>
+<td class="org-left">see list</td>
+</tr>
+
+<tr>
+<td class="org-left">Mobile Suite Gundam</td>
+<td class="org-left">new</td>
+<td class="org-left">see list</td>
+</tr>
+
+<tr>
+<td class="org-left">Re:ZERO</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Katanagatari</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">WIXOSS</td>
+<td class="org-left">new</td>
+<td class="org-left">see list</td>
+</tr>
+
+<tr>
+<td class="org-left">nichijou</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">chin chin</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">School Live!</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">akatsuki no yona</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Assult Lilly</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Gintama</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">SAO: Alternative Gun Gale Online</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">kokoro connect</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Angle Beats</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Macros Fronteer</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">good luck girl</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Bo-BoBo</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Fist of the North Star</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">yuyu Hakushou</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Legend of Galactic Heros</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">K</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Izzeta the Last Witch</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Saga of Tanya the Evil</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Konasuba</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Psycho pass</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Tengen Toppa Gurren Lagann</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Spice &amp; the wolf</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Mob Psycho</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Durarara!</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Puella Magi Madoka Magica</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Future Boy Conan</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Panty &amp; Stocking</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Sailor Moon</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">yuuki yuuna wa yuusha de aru</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Lupin the Third</td>
+<td class="org-left">SEMI</td>
+<td class="org-left">see list</td>
+</tr>
+
+<tr>
+<td class="org-left">Yamato 2199</td>
+<td class="org-left">finished</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Symphogear</td>
+<td class="org-left">finished</td>
+<td class="org-left">see list</td>
+</tr>
+
+<tr>
+<td class="org-left">Log Horizon</td>
+<td class="org-left">finished</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">One-Punch Man Season 1</td>
+<td class="org-left">finished</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Birdy the Mighty</td>
+<td class="org-left">finished</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Outlaw Star</td>
+<td class="org-left">finished</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">shoku geki no soma</td>
+<td class="org-left">ehh?</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">katekyoshi hitman reborn</td>
+<td class="org-left">ehh?</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Is this a Zombi</td>
+<td class="org-left">ehh?</td>
+<td class="org-left"><del>3</del></td>
+</tr>
+
+<tr>
+<td class="org-left"><del>Rising of the Shield Hero</del></td>
+<td class="org-left">ehh?</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><del>heartcatch precure</del></td>
+<td class="org-left">nopenope</td>
+<td class="org-left">nopenope</td>
+</tr>
+</tbody>
+</table>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">My Hero Academia</th>
+<th scope="col" class="org-left">status</th>
+<th scope="col" class="org-left">episode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">season 1</td>
+<td class="org-left">finished</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">season 2</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">season 3</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">season 4</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Lupin the Third</th>
+<th scope="col" class="org-left">status</th>
+<th scope="col" class="org-left">episode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Lupin the 3rd    PART4</td>
+<td class="org-left">finished</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Lupin the 3rd    PART5</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Lupin the 3rd    PART6</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">FMA</th>
+<th scope="col" class="org-left">status</th>
+<th scope="col" class="org-left">episode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">FMA</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">FMA Brotherhood</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">WIXOSS</th>
+<th scope="col" class="org-left">status</th>
+<th scope="col" class="org-right">episode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Selector infected</td>
+<td class="org-left">new</td>
+<td class="org-right">1</td>
+</tr>
+
+<tr>
+<td class="org-left">Selector spread</td>
+<td class="org-left">new</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Lostorage incited</td>
+<td class="org-left">new</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Lostorage conflated</td>
+<td class="org-left">new</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Symphogear</th>
+<th scope="col" class="org-left">status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Symphogear</td>
+<td class="org-left">finished</td>
+</tr>
+
+<tr>
+<td class="org-left">G</td>
+<td class="org-left">finished</td>
+</tr>
+
+<tr>
+<td class="org-left">GX</td>
+<td class="org-left">finished</td>
+</tr>
+
+<tr>
+<td class="org-left">AXZ</td>
+<td class="org-left">finished</td>
+</tr>
+
+<tr>
+<td class="org-left">XV</td>
+<td class="org-left">finished</td>
+</tr>
+</tbody>
+</table>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Mobile Suite Gundam</th>
+<th scope="col" class="org-left">status</th>
+<th scope="col" class="org-right">episode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">MSG '79</td>
+<td class="org-left">started</td>
+<td class="org-right">10</td>
+</tr>
+
+<tr>
+<td class="org-left">Gundam Wing</td>
+<td class="org-left">new</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">G Gundam</td>
+<td class="org-left">new</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Gundam Unicorn</td>
+<td class="org-left">new</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">IBO</td>
+<td class="org-left">new</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">JoJo's Bizarre Adventure</th>
+<th scope="col" class="org-left">status</th>
+<th scope="col" class="org-left">episode</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Part 1</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Part 2</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Part 3</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Part 4</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Part 5</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Part 6</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org59c35d8" class="outline-2">
+<h2 id="org59c35d8"><span class="section-number-2">2</span> Movies</h2>
+<div class="outline-text-2" id="text-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Movies</th>
+<th scope="col" class="org-left">status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Cowboy Bebop</td>
+<td class="org-left">new</td>
+</tr>
+
+<tr>
+<td class="org-left">Evangelion Rebuild</td>
+<td class="org-left">new</td>
+</tr>
+
+<tr>
+<td class="org-left">A Penguin's Memories</td>
+<td class="org-left">new</td>
+</tr>
+
+<tr>
+<td class="org-left">Akira</td>
+<td class="org-left">watched</td>
+</tr>
+
+<tr>
+<td class="org-left">Ghost in the Shell</td>
+<td class="org-left">watched</td>
+</tr>
+
+<tr>
+<td class="org-left">Time of EVE</td>
+<td class="org-left">watched</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgbedb994" class="outline-2">
+<h2 id="orgbedb994"><span class="section-number-2">3</span> Books</h2>
+<div class="outline-text-2" id="text-3">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Books</th>
+<th scope="col" class="org-left">status</th>
+<th scope="col" class="org-right">chapter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Romance of the three Kingdoms</td>
+<td class="org-left">started</td>
+<td class="org-right">1</td>
+</tr>
+</tbody>
+</table>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Manga</th>
+<th scope="col" class="org-left">status</th>
+<th scope="col" class="org-left">chapter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">assassination classroom</td>
+<td class="org-left">started</td>
+<td class="org-left">1</td>
+</tr>
+
+<tr>
+<td class="org-left">Akira</td>
+<td class="org-left">started</td>
+<td class="org-left">1</td>
+</tr>
+
+<tr>
+<td class="org-left">Witchcraft Works</td>
+<td class="org-left">started</td>
+<td class="org-left">2</td>
+</tr>
+
+<tr>
+<td class="org-left">Blazblue: Rimix Heart</td>
+<td class="org-left">started</td>
+<td class="org-left">7</td>
+</tr>
+
+<tr>
+<td class="org-left">Jojo's Bizzare Adventure</td>
+<td class="org-left">started</td>
+<td class="org-left">p1-c1</td>
+</tr>
+
+<tr>
+<td class="org-left">Ghost in the Shell</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Toriko</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">One-Punch Man</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">future boy conan</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">My Next Life as a Villainess</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: lahral</p>
+<p class="date">Created: 2021-10-19 Tue 15:31</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
