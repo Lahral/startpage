@@ -72,7 +72,7 @@
 | +heartcatch precure+             | nopenope | nopenope |
 
 
-| My Hero Academia | status   | episode |
+| My Hero Academia | status   | episode | 
 |------------------+----------+---------|
 | season 1         | finished |         |
 | season 2         | new      |         |
